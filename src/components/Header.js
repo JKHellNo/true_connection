@@ -1,20 +1,20 @@
 const Header = () => {
   return (
     <header>
-        <h1>Garbage Dating App</h1>
-        <h3> Log In </h3>
+        
+        
 <form action="/login/" method="POST">
-  <input id="id_login_username" type="text" name="login_username"  /><br />
-  <input type="password" name="login_password" id="id_login_password" /><br />
+  <input id="id_login_username" type="text" name="login_username"  placeholder="login_username"/><br />
+  <input type="password" name="login_password" id="id_login_password" placeholder="login_password" /><br />
   <button type="submit" class="btn btn-info">Login</button>
 </form>
 
 <h3> Sign Up <small>(It's free!)</small></h3>
 <form action="/register/" method="POST" >
-  <input id="fname" type="text" placeholder="username" name="name"  /><br />
-  <input type="text" name="register_email" id="id_register_email" /><br />
-  <input type="password" name="register_password" id="id_register_password" /><br />
-  <input type="password" name="register_password2" id="id_register_password2" /><br />
+  <input  type="text" name="name"  placeholder="name" /><br />
+  <input type="text" name="register_email" placeholder="register_email" /><br />
+  <input type="password" name="register_password" placeholder="register_password"/><br />
+  <input type="password" name="register_password2" placeholder="register_password2" /><br />
   <button type="submit" class="btn">Submit</button>
 </form>
 
