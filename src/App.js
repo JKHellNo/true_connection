@@ -1,18 +1,15 @@
 import Header from './components/Header'
 import Navigation from './components/Navigation'
-import Google_Login from './components/Google_Login'
+import Login from './components/Google_Login'
 
 
 function App() { 
-
-  
   return ( 
-    <div className="app">   
-    <h1>Garbage Dating App</h1>    
+    <div className="app">      
       <Navigation /> 
       <Header /> 
-      
-      <Google_Login />
+      <h1>---or --- </h1>
+      <Login/>
     </div>
   );
 }
