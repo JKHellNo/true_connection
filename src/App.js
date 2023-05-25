@@ -9,7 +9,9 @@ function App() {
       <Navigation /> 
       <Header /> 
       <h1>---or --- </h1>
-      <Login/>
+      <div className="app__login" width="60px">
+        <Login/>
+      </div>
     </div>
   );
 }
