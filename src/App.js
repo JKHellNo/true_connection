@@ -1,4 +1,4 @@
-import Registration from './components/Registration'
+import Registration from './components/Header'
 import Navigation from './components/Navigation'
 import Login from './components/Google_Login'
 
