@@ -8,10 +8,9 @@ function App() {
     <div className="app">      
       <Navigation /> 
       <Header /> 
-      <h1>---or --- </h1>
-      <div className="app__login" width="60px">
+      <h1>or --- </h1>
         <Login/>
-      </div>
+      
     </div>
   );
 }
