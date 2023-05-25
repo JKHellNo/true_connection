@@ -5,7 +5,7 @@ import { GoogleLogin } from '@react-oauth/google';
 const Google_Login = () => {
   return (
     <div>
-      <GoogleOAuthProvider clientId="970651052128-ju983bnpmanoua5eegkhbellmhn59jt4.apps.googleusercontent.com">
+      <GoogleOAuthProvider clientId="970651052128-55g9or917od8t74tblmaokmngadmbn5j.apps.googleusercontent.com">
           <GoogleLogin
             theme='filled_black'
             onSuccess={credentialResponse => {
