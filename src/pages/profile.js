@@ -1,8 +1,12 @@
-import React from 'react'
+import Profiles from '../components/Header'
 
 const profile = () => {
   return (
-    <div>profile</div>
+    <div>
+      <Profiles />
+
+       
+    </div>
   )
 }
 

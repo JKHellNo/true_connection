@@ -1,18 +1,19 @@
-import Registration from './components/Login'
-import Header from './components/Header'
-import Navigation from './components/Navigation'
-
-
+import {Route, Routes} from 'react-router-dom'
+import Login from './pages/Login'
+import Dashboard from "./pages/Dashboard";
+import Profile from './pages/Profile'
 
 function App() { 
   return ( 
-    <div className="app">      
-      <Header /> 
-      <Registration /> 
+    <>      
+    <Routes>
+        <Route path="login" element={<Login />} />
+        <Route path="dashboard" element={<Dashboard />} />
+     </Routes> 
+       
     
       
-    </div>
+    </>
   );
 }
-
 export default App;

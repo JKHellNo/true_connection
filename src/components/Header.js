@@ -112,8 +112,8 @@ export default function Example() {
           </a>
         </Popover.Group>
 
-        //padding, old login
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">  
+        
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
