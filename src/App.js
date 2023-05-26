@@ -3,6 +3,7 @@ import { createContext, useState } from "react";
 import ProtectedRoutes from './components/ProtectedRoutes';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
 
 export const UserContext = createContext();
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route element={<ProtectedRoutes />} >
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="profile" element={<Profile />} />
           </Route>
        </Routes> 
       </UserContext.Provider>
