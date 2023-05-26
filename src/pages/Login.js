@@ -1,4 +1,8 @@
+import { useNavigate, useLocation } from 'react-router'
+import { useContext } from 'react'
+import { UserContext } from '../App'
 import Google_Login from '../components/Google_Login'
+
 /*
   This example requires some changes to your config:
   
@@ -13,7 +17,11 @@ import Google_Login from '../components/Google_Login'
   }
   ```
 */
+
 export default function Login() {
+  const {user, setUser} = useContext(UserContext);
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <>
       {/*
@@ -84,6 +92,15 @@ export default function Login() {
               <button
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                onClick={() => {
+                  console.log(user.loggedIn)
+                  if (user.loggedIn) return;
+                  setUser ({loggedIn: true})
+
+                  if (location.state?.from) {
+                    navigate(location.state.from);
+                  }
+                }}
               >
                 Sign in
               </button>
