@@ -1,3 +1,4 @@
+import Login from './Google_Login'
 /*
   This example requires some changes to your config:
   
@@ -24,7 +25,8 @@ export default function Header() {
         ```
       */}
       <div className="relative flex min-h-screen flex-col justify-center overflow-hidden py-6 sm:py-12">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-orange-300">
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-orange-300"></div>
+        <div className="relative bg-white py-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900 sm:mx-auto sm:max-w-lg sm:w-full sm:rounded-2xl sm:px-10">
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -87,15 +89,12 @@ export default function Header() {
               </button>
             </div>
           </form>
-
-          <p className="mt-10 text-center text-sm text-gray-500">
-            Not a member?{' '}
-            <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-              Start a 14 day free trial
-            </a>
-          </p>
+          
+          
         </div>
+        
       </div>
+      <Login/>
         </div>
       </div>
       
