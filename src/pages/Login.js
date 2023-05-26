@@ -1,4 +1,4 @@
-import Google_Login from './Google_Login'
+import Google_Login from '../components/Google_Login'
 /*
   This example requires some changes to your config:
   
