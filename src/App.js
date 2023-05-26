@@ -1,6 +1,6 @@
 import Registration from './components/Header'
 import Navigation from './components/Navigation'
-import Login from './components/Google_Login'
+
 
 
 function App() { 
@@ -8,8 +8,7 @@ function App() {
     <div className="app">      
       <Navigation /> 
       <Registration /> 
-      <h1>or --- </h1>
-        <Login/>
+    
       
     </div>
   );
