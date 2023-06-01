@@ -105,11 +105,24 @@ export default function Login() {
             </div>
           </form>
         </div>
+      </div>
+
         
+      <hr class="mt-6 border-b-1 border-blueGray-300"></hr>
+      <div class=" mx-21 signin-separator my-7" style={{display: 'flex', justifyContent: 'center'}}> 
+        <span class="fw-bold">OR</span>
       </div>
       <Google_Login/>
-        </div>
+
+      <div class="flex flex-wrap mt-6 relative">
+        <span class="w-full text-center text-blueGray-500 text-sm"> 
+             Don't have an account? <a href="#">Register</a> </span>
+             
       </div>
+             
+
+    </div>
+  </div>
       
         
     </>
