@@ -2,6 +2,7 @@ import { useNavigate, useLocation } from 'react-router'
 import { useContext } from 'react'
 import { UserContext } from '../App'
 import Google_Login from '../components/Google_Login'
+import icon from '../img/icon.png'
 
 /*
   This example requires some changes to your config:
@@ -24,22 +25,15 @@ export default function Login() {
   const location = useLocation();
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
+      
       <div className="relative flex min-h-screen flex-col justify-center overflow-hidden py-6 sm:py-12">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-orange-300"></div>
         <div className="relative bg-white py-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900 sm:mx-auto sm:max-w-lg sm:w-full sm:rounded-2xl sm:px-10">
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
-            className="mx-auto h-10 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+            className="mx-auto h-40 w-29"
+            src={icon}
             alt="Your Company"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -48,7 +42,7 @@ export default function Login() {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+          <form className="space-y-6" action='https://true-connection-server.vercel.app' method="POST">
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                 Email address
@@ -104,19 +98,12 @@ export default function Login() {
                   else {
                     navigate('/profile')
                 }
-
-        
-                
-              
-                  
-                }}
+             }}
               >
                 Sign in
               </button>
             </div>
           </form>
-          
-          
         </div>
         
       </div>
