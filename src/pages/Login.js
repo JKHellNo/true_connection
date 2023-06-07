@@ -90,8 +90,6 @@ export default function Login() {
                   
                   if (user.loggedIn) return;
                   setUser ({loggedIn: true})
-                  console.log(location.state?.from)
-                  console.log(location.state?.from===undefined)
                   if (location.state?.from) {
                     navigate(location.state.from);
                   }
