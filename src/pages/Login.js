@@ -90,8 +90,6 @@ export default function Login() {
                   
                   if (user.loggedIn) return;
                   setUser ({loggedIn: true})
-                  console.log(location.state?.from)
-                  console.log(location.state?.from===undefined)
                   if (location.state?.from) {
                     navigate(location.state.from);
                   }
@@ -105,11 +103,25 @@ export default function Login() {
             </div>
           </form>
         </div>
+      </div>
+
         
+      <hr class="mt-6 border-b-1 border-blueGray-300"></hr>
+      <div class=" mx-21 signin-separator my-7" style={{display: 'flex', justifyContent: 'center'}}> 
+        <span class="font-semibold">- OR -</span>
       </div>
       <Google_Login/>
-        </div>
+
+      <div class="flex flex-wrap mt-6 relative">
+        <span class="w-full text-center text-blueGray-500 text-sm"> 
+        Don't have an account? <a className=" text-blue-600 hover:text-blue-800" href="#">Register</a> 
+        </span>
+             
       </div>
+             
+
+    </div>
+  </div>
       
         
     </>
