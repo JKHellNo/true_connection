@@ -14,10 +14,13 @@ function App() {
       <UserContext.Provider value={{ user, setUser }}>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route element={<ProtectedRoutes />} >
+          <Route path="profile" element={<Profile />} />
+          <Route path="dashboard" element={<Dashboard />} />
+  {/*         <Route element={<ProtectedRoutes />} >
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="profile" element={<Profile />} />
-          </Route>
+          </Route> */}
+
        </Routes> 
       </UserContext.Provider>
     </div>
